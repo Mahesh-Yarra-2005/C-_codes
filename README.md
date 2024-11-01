@@ -3,6 +3,8 @@ Just to store codes.
 <br>
 Author - Mahesh Yarra
 ?
+
+
 //C++ code which converts given decimal number to its corresponding binary number 
 
 #include <iostream>
@@ -48,3 +50,26 @@ int main (){
     }
     return 0;
 }
+
+
+//code which checks the numbers whether it is a power of 2 or not.
+
+#include <iostream>
+using namespace std;
+#include <cmath> //To use log function
+
+int main (){
+    int n ;
+    cout<<"enter the number"<<endl;
+    cin>>n;
+     double p;
+    int m;
+    p=log2(n);   //if p is an integer then output is true otherwise false
+    m=p;    // p(double)- pcan be rational but m (int) - m will be an integer
+    if (p==m){
+        cout<<"true"<<endl;
+    }else if (p!=m){
+        cout<<"false"<<endl;
+    }
+    return 0;}
+
