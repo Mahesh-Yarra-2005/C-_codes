@@ -5,7 +5,7 @@ Author - Mahesh Yarra
 ?
 
 
-//C++ code which converts given decimal number to its corresponding binary number 
+**//C++ code which converts given decimal number to its corresponding binary number **
 
 #include <iostream>
 using namespace std;
@@ -25,7 +25,7 @@ cout<<ans;
     return 0;
 }
 
-//Prime number detector
+//**Prime number detector**
 
 #include <iostream>
 using namespace std;
@@ -52,7 +52,7 @@ int main (){
 }
 
 
-//code which checks the numbers whether it is a power of 2 or not.
+//**code which checks the numbers whether it is a power of 2 or not.**
 
 #include <iostream>
 using namespace std;
@@ -73,3 +73,26 @@ int main (){
     }
     return 0;}
 
+
+
+//**code which can tell the no of notes required of 100, 50, 20, 10, 1 for a given amount**
+
+#include<iostream>
+using namespace std;
+int main (){
+    int r;
+    cout<<"Enter the amount"<<endl;
+    cin>>r;
+    int a, b, c, d, e;
+    a = r/100;
+    r = r-a*100;
+    b=r/50;
+    r=r-b*50;
+    c=r/20;
+    r=r-20*c;
+    d=r/10;
+    r=r-10*d;
+    e=r;
+    cout<<"100 rs notes: "<<a<<", 50 notes: "<<b<<", 20 notes: "<<c<<" ,10 notes: "<<d<<" , 1 notes: "<<e<<endl;
+   
+   }
